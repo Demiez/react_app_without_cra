@@ -7,7 +7,7 @@
 yarn init -y <br>
 touch tsconfig.json <br>
 yarn add react react-dom <br>
-yarn add -D @types/react @types/react-dom <br>
+yarn add -D typescript @types/react @types/react-dom <br>
 mkdir public src ./src/components <br>
 touch ./public/index.html ./src/index.tsx ./src/App.tsx <br>
 mkdir ./src/components/Default && touch ./src/components/Default/Default.tsx <br>
@@ -17,6 +17,11 @@ mkdir ./src/components/Default && touch ./src/components/Default/Default.tsx <br
 yarn add -D webpack webpack-cli webpack-dev-server ts-node tsconfig-paths-webpack-plugin @types/node @types/webpack @types/webpack-dev-server <br>
 yarn add -D ts-loader fork-ts-checker-webpack-plugin html-webpack-plugin <br>
 touch webpack.config.ts
+
+#### prettier block
+
+yarn add -D prettier
+touch .prettierrc
 
 #### ESlint block
 

@@ -34,5 +34,5 @@
   "exclude": [
     "./**/*.test.*",
     "./node_modules/"
-]
+  ]
 }
