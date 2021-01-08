@@ -22,10 +22,17 @@
       "components/*": [
         "src/components/*"
       ]
-    }
+    },
+    "typeRoots": [
+      "./node_modules/@types/"
+    ]
   },
   "include": [
     "./src",
     "./webpack.config.ts"
-  ]
+  ],
+  "exclude": [
+    "./**/*.test.*",
+    "./node_modules/"
+]
 }
