@@ -1,15 +1,9 @@
 {
   "eslintIntegration": true,
   "stylelintIntegration": true,
+  "trailingComma": "all",
+  "arrowParens": "always",
   "printWidth": 120,
   "tabWidth": 2,
-  "singleQuote": true,
-  "parser": "typescript",
-  "arrowParens": "always",
-  "endOfLine": "lf",
-  "bracketSpacing": true,
-  "quoteProps": "as-needed",
-  "semi": true,
-  "useTabs": false,
-  "trailingComma": "all"
+  "singleQuote": true
 }

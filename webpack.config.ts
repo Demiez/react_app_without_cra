@@ -8,11 +8,16 @@ const webpackConfig = (env): Configuration => ({
   entry: './src/index.tsx',
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
-    plugins: [new TsconfigPathsPlugin()],
+    plugins: [new TsconfigPathsPlugin() as any],
   },
   output: {
     path: path.join(__dirname, '/dist'),
     filename: 'build.js',
+  },
+  devServer: {
+    contentBase: path.join(__dirname, '/dist'),
+    compress: true,
+    port: 9000,
   },
   module: {
     rules: [
@@ -29,7 +34,7 @@ const webpackConfig = (env): Configuration => ({
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',
-    }),
+    }) as any,
     new webpack.DefinePlugin({
       'process.env.PRODUCTION': env.production || !env.development,
       'process.env.NAME': JSON.stringify(require('./package.json').name),
